@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Визуализация вычислений</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+  <form>
+    <div class="inputs">
+      <label>
+        y =
+        <input
+          type="text"
+          name="y-fn"
+          autocapitalize="none"
+          autocorrect="off"
+        />
+      </label>
+    </div>
+    <div class="buttons">
+      <button type="submit">Построить!</button>
+      <button type="button">Прмеры</button>
+    </div>
+  </form>
+  <div class="container">
+    <canvas id="cartesian" width="300" height="300"></canvas>
+    <canvas id="polar" width="300" height="300"></canvas>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.9.0/math.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
