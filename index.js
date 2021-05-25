@@ -14,7 +14,7 @@
   }
     
   function axis() {
-    unitsPerAxe=document.getElementById('r1');
+    var unitsPerAxe=document.getElementById('r1');
   }
   const renderCartesian = initGl(cartesianGl, unitsPerAxe);
   const renderPolar = initGl(polarGl, unitsPerAxe);
