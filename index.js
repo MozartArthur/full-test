@@ -12,8 +12,11 @@
       "Sorry, your system doesn't seem to support WebGL"
     );
   }
-    
-  var unitsPerAxe = document.getElementById("r1").value;
+  
+  axis() {  
+    var unitsPerAxe = document.getElementById("r1").value;
+    document.getElementById("demo").innerHTML = unitsPerAxe;
+  }
   const renderCartesian = initGl(cartesianGl, unitsPerAxe);
   const renderPolar = initGl(polarGl, unitsPerAxe);
 
