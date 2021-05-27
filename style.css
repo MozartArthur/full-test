@@ -1,10 +1,6 @@
 body {
   margin: 0;
-    background-image: linear-gradient(
-      to right,
-      #4ca874,
-      #eaeaea
-    );
+  background: url(https://html5book.ru/wp-content/uploads/2016/09/background75.jpg);
   color: #747474;
   font-family: monospace;
   font-size: 16px;
@@ -45,38 +41,95 @@ input[type=text] {
 }
 
 button {
-  padding: 4px;
-  border: 1px solid #5bb375;
-  border-radius: 2px;
-  font-family: monospace;
-  letter-spacing: 0.02rem;
-  outline-color: green;
-  padding-left: 7px;
-  padding-right: 7px;
-  border-color: white;
-  background: #5bb375;
-  color: white;
-  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
 }
 
 button:hover {
-  border-color: #3ec667;
-}
-
-button:active {
-  color: black;
-  background: #7ca187;
-  border: black;
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
 }
 
 canvas {
   width: inherit;
   max-width: inherit;
+    border: double 4px #2EE59D;
 }
 
 @media (min-width: 620px) {
   canvas {
     width: 42%;
 }
+
+.rectangle {
+counter-reset: li; 
+list-style: none; 
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+.rectangle a {
+position: relative;
+display: block;
+padding: .4em .4em .4em .8em;
+margin: .5em 0 .5em 2.5em;
+background: rgb(244, 244, 245);
+color: #444;
+text-decoration: none;
+transition: all .3s ease-out;
+border-radius: .5em;
+width: 350px;
+}
+
+.rectangle a:hover {background: #DCDDE1;}   
+
+.rectangle a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -2.5em;
+top: 50%;
+margin-top: -1em;
+background: #2EE59D;
+height: 2em;
+width: 2em;
+line-height: 2em;
+text-align: center;
+font-weight: bold;
+}
+
+.rectangle a:after {
+position: absolute;
+content: "";
+border: .5em solid transparent;
+left: -1em;
+top: 50%;
+margin-top: -.5em;
+transition: all .3s ease-out;
+}
+
+.rectangle a:hover:after {
+left: -.5em;
+border-left-color: #2EE59D;
+}
+
 
 }
