@@ -30,7 +30,7 @@
     ["t * sin(t)", "t * cos(t)"],
     ["1.5 * (1+cos(t)) * cos(t)", "1.5 * (1+cos(t)) * sin(t)"],
     ["3 * (cos(t) - cos(15t)/6)", "3 * (sin(t) - sin(15t)/6)"],
-    ["2 * cos(t) + cos(2t)", "2 * cos(t) - cos(2t)"],
+    ["2 * cos(t) + cos(2t)", "2 * sin(t) - sin(2t)"],
     ["2 * sin(t)^3", "2 * cos(t)^3"],
     ["3 * (cos(t) + cos(5t)/5)", "3 * (sin(t) - sin(5t)/5)"],
     ["2.2 * (cos(t) + cos(1.1t) / 1.1)", "2.2 *(sin(t) - sin(1.1t) / 1.1)"],
