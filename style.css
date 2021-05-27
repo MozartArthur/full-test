@@ -96,11 +96,6 @@ canvas {
   border: double 4px #2EE59D;
 }
 
-@media (min-width: 620px) {
-  canvas {
-    width: 42%;
-}
-
 .rectangle {
 counter-reset: li; 
 list-style: none; 
