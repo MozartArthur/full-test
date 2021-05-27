@@ -91,9 +91,9 @@ button:hover {
 }
 
 canvas {
-  width: 90%;
-  margin: 10px;
-    border: double 4px #2EE59D;
+  width: 500px;
+  height: 500px;
+  border: double 4px #2EE59D;
 }
 
 @media (min-width: 620px) {
