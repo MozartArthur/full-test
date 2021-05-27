@@ -5,12 +5,15 @@
   <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-  <h1>Заголовок</h1>
+  <h1>Заголовок 
+  </h1>
   <form>
-  <input type="checkbox" id="tri"/><label for="tri"> <a href="index.html">Тест</a></label>
-  <input type="checkbox" id="tril"/><label for="tril"> <a href="index1.html">Тест</a></label>
+    <ol class="rectangle">
+      <li><a href="index.html">Визуализация явных функций</a></li>
+      <li><a href="index1.html">Визуализация параметрического представления</a></li>
+    </ol>
     <div class="inputs">
-      <label>
+       <label>
         y =
         <input
           type="text"
@@ -18,7 +21,7 @@
           autocapitalize="none"
           autocorrect="off"
         />
-      </label>
+       </label>
     </div>
     <div class="buttons">
       <button type="submit">Построить</button>
@@ -28,10 +31,7 @@
   <div class="container">
     <canvas id="cartesian" width="300" height="300"></canvas>
     <canvas id="polar" width="300" height="300"></canvas>
-  </div>
-  <div>
-    <input type="range" id="r1" oninput="axis()" min="6" max="100" value="8" step="2">
-  </div>
+  </div>Ы
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.9.0/math.min.js"></script>
   <script src="index.js"></script>
 </body>
