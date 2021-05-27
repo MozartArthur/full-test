@@ -26,8 +26,9 @@
   });
 
   const examples = [
-    ["sin(t)", "cos(t)"],
+    ["3sin(t)", "3cos(t)"],
     ["t * sin(t)", "t * cos(t)"],
+    ["0.05t * sin(t)", "0.05t * cos(t)"],
     ["1.5 * (1+cos(t)) * cos(t)", "1.5 * (1+cos(t)) * sin(t)"],
     ["3 * (cos(t) - cos(15t)/6)", "3 * (sin(t) - sin(15t)/6)"],
     ["2 * cos(t) + cos(2t)", "2 * sin(t) - sin(2t)"],
