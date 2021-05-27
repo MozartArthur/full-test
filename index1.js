@@ -26,18 +26,18 @@
   });
 
   const examples = [
-    ["cos(t)", "sin(t)"],
-    ["2 * cos(t)^3", "2 * sin(t)^3"],
-    ["log(t) - sin(t)", "sin(t)"],
-    ["t * 100", "t"],
-    ["t", "1 + sin(t * 4)"],
-    ["t", "2 + abs(sin(t * 7)) / 3"],
-    ["t / 2", "tan(t)"],
-    ["sin(t * 4) * t/4", "t"],
-    ["t^2", "abs(t)"],
-    ["100 * cos(t)", "abs(t) / 5"],
-    ["cos(t)^3", "3 * sin(t)^3 + log(t)"],
-    ["tan(t)^3", "5 * sin(t) + log(t)"],
+    ["sin(t)", "cos(t)"],
+    ["t * sin(t)", "t * cos(t)"],
+    ["1.5 * (1+cos(t)) * cos(t)", "1.5 * (1+cos(t)) * sin(t)"],
+    ["3 * (cos(t) - cos(15t)/6)", "3 * (sin(t) - sin(15t)/6)"],
+    ["2 * cos(t) + cos(2t)", "2 * cos(t) - cos(2t)"],
+    ["2 * sin(t)^3", "2 * cos(t)^3"],
+    ["3 * (cos(t) + cos(5t)/5)", "3 * (sin(t) - sin(5t)/5)"],
+    ["2.2 * (cos(t) + cos(1.1t) / 1.1)", "2.2 *(sin(t) - sin(1.1t) / 1.1)"],
+    ["3 * (cos(t) + cos(6.2t) / 6.2)", "3 *(sin(t) - sin(6.2t) / 6.2)"],
+    ["2.5 * (cos(t) - cos(3.1t) / 3.1)", "2.5 *(sin(t) - sin(3.1t) / 3.1)"],
+    ["sin(t)*(e^cos(t)-2cos(4t)+sin(1/12t)^5)", "cos(t)*(e^cos(t)-2cos(4t)+sin(1/12t)^5)"],
+    ["4 * sin(5t+pi/2)", "4 * sin(8t)"],
   ];
 
   (() => {
