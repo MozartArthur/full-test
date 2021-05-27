@@ -131,5 +131,9 @@ left: -.5em;
 border-left-color: #2EE59D;
 }
 
+.text-shadow-1 {
+color: white;
+text-shadow: 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);
+}
 
 }
