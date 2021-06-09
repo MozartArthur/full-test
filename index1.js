@@ -126,20 +126,17 @@ function initGl(gl, unitsPerAxe) {
   );
   const positionBuffer = gl.createBuffer();
 
-  // the following calls are usually done at render time
-  // but since we're just doing simple fixed 2D, we can
-  // afford to make them only once at setup
   gl.useProgram(program);
   gl.uniform1f(scaleUniformLocation, unitsPerAxe / 2);
   gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
   gl.enableVertexAttribArray(positionAttributeLocation);
   gl.vertexAttribPointer(
     positionAttributeLocation,
-    2,        // components per iteration
-    gl.FLOAT, // data type
-    false,    // no data normalization
-    0,        // stride
-    0,        // offset
+    2,        
+    gl.FLOAT, 
+    false,    
+    0,        
+    0,        
   );
 
   return makeRender(gl, colorUniformLocation);
