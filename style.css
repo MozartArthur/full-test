@@ -28,6 +28,22 @@ h1 {
  
 }
 
+h2 {
+  margin-top: 0;
+  color: rgba(27, 122, 84, 0.4);
+  padding: 0 7% 0 0;
+  text-align: right;
+  border-bottom: dashed #5f5c5c 2px;
+  font-size: 21px;
+  text-shadow: 1px 1px white, 1px 1.5px #D7CC88;
+  height: 60px;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, #2EE59D 200%);
+  border-image-slice: 1;
+  letter-spacing: 2px;
+ 
+}
+
 .outer {
   text-align: center;
   border: 1px solid blue;
