@@ -56,16 +56,13 @@
   }
 
   function draw(exprY) {
-    const compiledX = window.math.compile(exprY);
     const compiledY = window.math.compile(exprY);
     drawCartesian(
-      compiledX,
       compiledY,
       unitsPerAxe,
       renderCartesian
     );
     drawPolar(
-      compiledX,
       compiledY,
       unitsPerAxe,
       renderPolar
@@ -237,7 +234,7 @@ function getBasis(unitsPerAxe) {
   return axes;
 }
 
-function drawCartesian(exprX, exprY, unitsPerAxe, render) {
+function drawCartesian(exprY, unitsPerAxe, render) {
   
 const components = [];
 
@@ -249,7 +246,7 @@ components.push(t, y);
 draw(components, unitsPerAxe, render);
 }
 
-function drawPolar(exprX, exprY, unitsPerAxe, render) {
+function drawPolar(exprY, unitsPerAxe, render) {
   const components = [];
 
     for (let t = -500; t < 500; t += 0.02)  {
